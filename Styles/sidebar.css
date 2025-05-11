@@ -1,0 +1,45 @@
+.side-bar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  background-color: rgb(160, 75, 18);
+  width: 92px;
+  color: white;
+  z-index: 200px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-color: rgb(255, 251, 246);
+}
+
+.sidebar-link{
+  background-color: rgb(253, 252, 252);
+  height:100px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  color: black;
+}
+
+.sidebar-link:hover{
+  background-color: rgb(131, 131, 238);
+}
+
+.page-button{
+  width: 30px;
+}
+
+.content-button{
+  width: 30px;
+}
+
+.about-button{
+  width: 30px;
+}
+
+.contact-button{
+  width: 30px;
+}
