@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 
-<html>
-  <header>
+<html lan = "en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-      North group
+      North group web
     </title>
 
     <link rel="stylesheet" href="Styles/General.css">
@@ -11,7 +13,7 @@
     <link rel="stylesheet" href="Styles/Photo.css"> 
     <link rel="stylesheet" href="Styles/sidebar.css">
     <link rel="stylesheet" href="Styles/Responsive-design.css">
-  </header>
+  </head>
 
   <body>
 
@@ -27,25 +29,18 @@
       </div>
       
       <div class = "middle-section">
-        <input class = "search-bar" type ="text" placeholder="search">
-          <button class="search-button">
+        <input class = "search-bar" id="searchBar" type ="text" placeholder="search">
+          <button class="search-button js-search-button">
           <img class="search-icon" src="ICONS/search bar.png">
         <div class="tooltip">search</div>
         </button>
-          <button class = "voice-search-button">
+          <button class = "voice-search-button js-voice-search-button">
           <img class="voice-search-icon" src="ICONS/voice-icon.png">
           <div class="tooltip">Search with your voice</div>
         </button>
+        <p class = 'listeningStatus'>🎧Listening......</p>
       </div>
       <div class = "right-section">
-        <div class="upload-button-container">
-           <img class="upload-icon" src="ICONS/upload icon.jpeg">
-           <div class="tooltip">Upload files</div>
-        </div>
-        <div class="apps-button-container">
-          <img class="download-icon" src="ICONS/download-icon.png">
-          <div class="tooltip">Download photos</div>
-        </div>
         <div class="notification-button-container">
           <img class=" notification-icon" src="ICONS/notification.png">
           <div class="tooltip">Notifications</div>
@@ -57,300 +52,42 @@
         </div>
       </div> 
     </div>
-
-    <div class="side-bar">
-      <div class="sidebar-link">
+     
+    <div class="side-bar" id="sideBar">
+      <button id = "toggleBtn" class="cancel">
+        <span>X</span>
+      </button>
+      <div class="sidebar-link sidebar-link-2" id="sideBarlink"onclick="window.location.href = 'Files-menu.html'">
         <img class = "page-button" src="ICONS/humberga-menu.png">
-          Files menu
+          <span>Files menu</span>
       </div>
-      <div class="sidebar-link">
-        <img class = "content-button" src="ICONS/pictures.png">
-          More photos
+      <div class="sidebar-link" id="sideBarlink"onclick="window.location.href = 'More-photos.html'">
+        <img class = "content-button" src="ICONS/pictures.png" id = "collection">
+          <span>More photos</span>
       </div>
-      <div class="sidebar-link">
+      <div class="sidebar-link" id="sideBarlink"onclick="window.location.href='Videos.html'">
+        <img class = "content-button" src="ICONS/video.png" id = "collection" >
+          <span>Videos</span>
+      </div>
+      <div class="sidebar-link"onclick="window.location.href = 'About-Us.html'">
         <img class= "about-button" src = "ICONS/about-group.png">
-          About the group
+          <span>About the group</span>
       </div>
-      <div class="sidebar-link">
+      <div class="sidebar-link"onclick="window.location.href = 'Contact-us.html'">
         <img class = "contact-button" src="ICONS/Contact-us.png">
-          Contact Us
+          <span>Contact Us</span>
+      </div>
+      <div class="sidebar-link"onclick="window.location.href = 'Developer.html'">
+        <img class = "contact-button" src="ICONS/help.png">
+          <span>Developer</span>
       </div>
     </div> 
 
-    <div class = "photo-grid">
-      <div class = "photo-preview">
-        <div class = gvh-row>
-          <p class = "stakeholder-meeting-heading">
-            STAKEHOLDER MEETING
-          </p>    
-          <img class="gvh-photo" src = "PHOTOS/GVH.jpg">
-        </div>
-        <div class = "photo-info-grid">
-          <div class="profile-picture-insidediv">
-            <img class = "profile-picture" src="PHOTOS/Icon.jpg">
-          </div>
-          <div class="photo-info">
-            <p class="photo-title">
-              <strong> Entry protocol</strong>
-             </p>  
-             <p class = "photo-text">
-              Agreement meeting with GVH <strong>Chigoneka</strong>
-              </p>         
-             <p class="photo-author">
-               By <strong>John Mwafulirwa</strong>
-             </p>
-          </div>
-        </div>
-      </div>  
-      <div class = "photo-preview">  
-        <div class = gvh-row>    
-          <img class="gvh-photo-2" src = "PHOTOS/GVH-2.jpg">
-        </div>
-        <div class = "photo-info-grid">
-          <div class="profile-picture-insidediv">
-            <img class = "profile-picture" src="PHOTOS/Icon.jpg">
-          </div>
-          <div class="photo-info">
-            <p class="photo-title">
-              <strong> Entry protocol</strong>
-             </p>  
-             <p class = "photo-text">
-              Agreement meeting with GVH <strong>Chigoneka</strong>
-              </p>         
-             <p class="photo-author">
-               By <strong>John Mwafulirwa</strong>
-             </p>
-          </div>
-        </div>
-      </div>  
-      <div class = "photo-preview">  
-        <div class = gvh-row>
-          <p class = "stakeholder-meeting-heading">
-            AWARENESS CAMPAIGNS
-          </p>    
-          <img class="gvh-photo" src = "PHOTOS/senstization by Jonathan.jpg">
-        </div>
-        <div class = "photo-info-grid">
-          <div class="profile-picture-insidediv">
-            <img class = "profile-picture" src="PHOTOS/Icon.jpg">
-          </div>
-          <div class="photo-info">
-            <p class="photo-title">
-              <strong> Community meeting</strong>
-             </p>  
-             <p class = "photo-text">
-              Senstization session at <strong>Jeziwadi</strong> Village
-              </p>
-             <p class="photo-author">
-               By <strong>Jonathan John</strong>
-             </p>
-          </div>
-        </div>
-      </div>
-      <div class = "photo-preview">
-        <div class = gvh-row>
-          <img class="gvh-photo-2" src = "PHOTOS/senstization by Fridah.jpg">
-        </div>
-        <div class = "photo-info-grid">
-          <div class="profile-picture-insidediv">
-            <img class = "profile-picture" src="PHOTOS/Icon.jpg">
-          </div>
-          <div class="photo-info">
-            <p class="photo-title">
-              <strong> community meeting</strong>
-            </p>
-             <p class = "photo-text">
-              Senstization session at <strong>Jeziwadi</strong> Village
-              </p>
-             <p class="photo-author">
-               By <strong>Fridajie B. Mulwafu</strong>
-             </p>
-          </div>
-        </div>
-      </div>
-      <div class = "photo-preview">
-        <div class = gvh-row>
-          <p class = "stakeholder-meeting-heading">
-            AWARENESS CAMPAIGNS
-          </p>
-          <img class="gvh-photo" src = "PHOTOS/senstization by Atupele.jpg">
-        </div>
-        <div class = "photo-info-grid">
-          <div class="profile-picture-insidediv">
-            <img class = "profile-picture" src="PHOTOS/Icon.jpg">
-          </div>
-          <div class="photo-info">
-            <p class="photo-title">
-              <strong> Community meeting</strong>
-             </p>
-             <p class = "photo-text">
-              Senstization session at <strong>Jeziwadi</strong> village
-              </p>
-             <p class="photo-author">
-               By <strong> Atupele K.Sichali</strong>
-             </p>
-          </div>
-        </div>
-      </div>
-      <div class = "photo-preview">
-        <div class = gvh-row>
-          <img class="gvh-photo-2" src = "PHOTOS/community dialogue by Frank.jpg">
-        </div>
-        <div class = "photo-info-grid">
-          <div class="profile-picture-insidediv">
-            <img class = "profile-picture" src="PHOTOS/Icon.jpg">
-          </div>
-          <div class="photo-info">
-            <p class="photo-title">
-              <strong> community meeting</strong>
-             </p>  
-             <p class = "photo-text">
-              Community dialogue session at <strong>Jeziwadi</strong> village
-             </p>
-             <p class="photo-author">
-               By <strong> Frank  K. Mlowoka</strong>
-             </p>
-          </div>
-        </div>
-      </div>
+    <div class = "photo-grid js-photo-grid" id = "photoGrid"> 
     </div>
-    <div class = "photo-grid">
-      <div class = "photo-preview">
-        <div class = gvh-row>
-          <p class = "stakeholder-meeting-heading">
-            ESTABLISHMENT OF SUPPORT NETWORKS
-          </p>    
-          <img class="gvh-photo" src = "PHOTOS/Mentorship by Chief Advisor.jpg">
-        </div>
-        <div class = "photo-info-grid">
-          <div class="profile-picture-insidediv">
-            <img class = "profile-picture" src="PHOTOS/Icon.jpg">
-          </div>
-          <div class="photo-info">
-            <p class="photo-title">
-              <strong> Mentorship session</strong>
-             </p>  
-             <p class = "photo-text">
-              Mentorship session at VH <strong>Jeziwadi</strong>
-              </p>         
-             <p class="photo-author">
-               By <strong>Chief Advisor</strong>
-             </p>
-          </div>
-        </div>
-      </div>  
-      <div class = "photo-preview">  
-        <div class = gvh-row>    
-          <img class="gvh-photo-2" src = "PHOTOS/Mentorship by Mothergroup chair.jpg">
-        </div>
-        <div class = "photo-info-grid">
-          <div class="profile-picture-insidediv">
-            <img class = "profile-picture" src="PHOTOS/Icon.jpg">
-          </div>
-          <div class="photo-info">
-            <p class="photo-title">
-              <strong> Mentorship session</strong>
-             </p>  
-             <p class = "photo-text">
-              Mentorship session at VH <strong>Jeziwadi</strong>
-              </p>         
-             <p class="photo-author">
-               By <strong>Madam Mlotha</strong> Mother group Chair
-             </p>
-          </div>
-        </div>
-      </div>  
-      <div class = "photo-preview">  
-        <div class = gvh-row>
-          <p class = "stakeholder-meeting-heading">
-            ESTABLISHMENT OF SUPPORT NETWORKS
-          </p>    
-          <img class="gvh-photo" src = "PHOTOS/Mentorship by Paranjeta.jpg">
-        </div>
-        <div class = "photo-info-grid">
-          <div class="profile-picture-insidediv">
-            <img class = "profile-picture" src="PHOTOS/Icon.jpg">
-          </div>
-          <div class="photo-info">
-            <p class="photo-title">
-              <strong> Mentorship session</strong>
-             </p>  
-             <p class = "photo-text">
-              Mentorship session at VH <strong>Jeziwadi</strong>
-              </p>
-             <p class="photo-author">
-               By <strong> Madam Paranjeta </strong> Social worker
-             </p>
-          </div>
-        </div>
-      </div>
-      <div class = "photo-preview">
-        <div class = gvh-row>
-          <img class="gvh-photo-2" src = "PHOTOS/Mentorship by Paranjeta (2).jpg">
-        </div>
-        <div class = "photo-info-grid">
-          <div class="profile-picture-insidediv">
-            <img class = "profile-picture" src="PHOTOS/Icon.jpg">
-          </div>
-          <div class="photo-info">
-            <p class="photo-title">
-              <strong> Mentorship session</strong>
-            </p>
-             <p class = "photo-text">
-              Mentorship session at VH <strong>Jeziwadi</strong>
-              </p>
-             <p class="photo-author">
-               By <strong>Madam Paranjeta</strong> Psychosocial counsellor
-             </p>
-          </div>
-        </div>
-      </div>
-      <div class = "photo-preview">
-        <div class = gvh-row>
-          <p class = "stakeholder-meeting-heading">
-            SUPERVISION BY THE DEPARTMENT
-          </p>
-          <img class="gvh-photo" src = "PHOTOS/Supervision.jpg">
-        </div>
-        <div class = "photo-info-grid">
-          <div class="profile-picture-insidediv">
-            <img class = "profile-picture" src="PHOTOS/Icon.jpg">
-          </div>
-          <div class="photo-info">
-            <p class="photo-title">
-              <strong> Supervision</strong>
-             </p>
-             <p class = "photo-text">
-              Supervision
-              </p>
-             <p class="photo-author">
-               By <strong> Head of department</strong>
-             </p>
-          </div>
-        </div>
-      </div>
-      <div class = "photo-preview">
-        <div class = gvh-row>
-          <img class="gvh-photo-2" src = "PHOTOS/senstization final.jpg">
-        </div>
-        <div class = "photo-info-grid">
-          <div class="profile-picture-insidediv">
-            <img class = "profile-picture" src="PHOTOS/Icon.jpg">
-          </div>
-          <div class="photo-info">
-            <p class="photo-title">
-              <strong> Final community meeting</strong>
-             </p>  
-             <p class = "photo-text">
-              Community dialogue session at <strong>Jeziwadi</strong> village
-             </p>
-             <p class="photo-author">
-               By <strong> Project team</strong>
-             </p>
-          </div>
-        </div>
-      </div>
-    </div>   
 
+    <script src="GenerateHtmlByJs/photosObject.js"></script>  
+    <script src = "scripts/myscript.js"></script>
+    
   </body>
 </html>
